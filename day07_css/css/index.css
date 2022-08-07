@@ -1,0 +1,456 @@
+
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-image: url("../uploads/banner_1.png");
+}
+.banner .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,.8);
+}
+.banner .left li{
+    position: relative;
+    padding: 13px 0;
+}
+.banner .left li a{
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 36px;
+}
+.banner .left li span{
+    margin-right: 19px;
+    float: right;
+}
+.banner .left li:hover{
+    background-color: #27ba9b;
+}
+.banner .left a::after {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+/*上一个*/
+.prev {
+    left: 260px;
+    background-position: 14px -60px;
+}
+/*下一个*/
+.next {
+    right: 10px;
+    background-position: -23px -60px;
+}
+.banner .wrapper ol{
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+
+
+}
+.banner .wrapper ol li{
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner .wrapper ol .current {
+    background-color: #fff;
+}
+
+/*新鲜好物*/
+.goods {
+    height: 114px;
+    line-height: 114px;
+    position: relative;
+}
+.goods h2{
+    float: left;
+    font-size: 29px;
+    color: #333333;
+}
+.goods h3{
+    float: left;
+    font-size: 16px;
+    color: #999999;
+    margin-left: 34px;
+    margin-top: 17px;
+    line-height: 97px;
+}
+.special .hd h4 a,
+.fresh .hd h4 a,
+.goods h4 a{
+    float: right;
+    margin-right: 21px;
+    color: #999999;
+}
+.goods h4 a{
+    margin-top: 17px;
+    line-height: 97px;
+}
+.special .hd h4 a span,
+.fresh .hd h4 a span,
+.goods h4 a span{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 7px;
+    height: 13px;
+    background-image: url("../images/sprites.png ");
+    background-position: 0 -110px;
+}
+.goods h4 a span{
+    top: 59px;
+}
+.new{
+    height: 405px;
+}
+.new ul li{
+    float: left;
+    position: relative;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px ;
+    background-color: #f0f9f4;
+}
+.new ul li:nth-child(4){
+    margin-right:0;
+}
+.new ul li a{
+    display: inline-block;
+    text-align: center;
+}
+.new ul li a img{
+    width: 305px;
+    height: 304px;
+}
+.new ul li a h3{
+    font-size: 20px;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+.new ul li a div{
+    color: #9a2e1f;
+    font-size: 17px;
+}
+.new ul li a span{
+    font-size: 23px;
+}
+.new ul li a b{
+    position: absolute;
+    left: 18px;
+    top:18px;
+
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 3px;
+
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
+/*推荐*/
+.moods ul{
+    float: left;
+    height: 405px;
+    margin-top: 0;
+}
+.moods ul li{
+    background-color: #fff;
+
+}
+.moods ul li a{
+    display: inline-block;
+    height: 405px;
+}
+.moods ul li a div{
+    font-size: 16px;
+    color: #999999;
+}
+.hot{
+    height: 466px;
+    background-color: #f5f5f5;
+}
+
+.hot .goods .s1{
+    margin-top:79px;
+    margin-right: 0;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color: #e2e2e2;
+
+}
+.hot .goods .s1:hover{
+    background-color: #27ba9b;
+}
+.hot .goods .s1 div{
+    margin-left: 5px;
+    margin-top: 4px;
+    width: 10px;
+    height: 13px;
+    background-image: url("../images/sprites.png");
+    background-position: -38px -110px;
+}
+.hot .goods .s2{
+    margin-top:79px;
+    margin-right: 32px;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color: #e2e2e2;
+}
+.hot .bd li{
+    margin-right: 5px;
+    float: left;
+}
+.hot .bd li:nth-child(4){
+    margin-right: 0;
+}
+.hot .bd li img{
+    width: 244px;
+    height: 306px;
+    background-color: #000000;
+}
+.fresh {
+    height: 713px;
+}
+.fresh .hd{
+    position: relative;
+    height: 96px;
+    line-height: 96px;
+}
+.fresh .hd h2{
+    float: left;
+    font-size: 29px;
+    color: #333333;
+}
+.fresh .hd li:nth-child(1){
+   margin-left: 680px;
+}
+.fresh .hd li{
+    position: relative;
+    float: left;
+    margin-right: 12px;
+}
+.fresh .hd li a{
+    padding: 7px 4px;
+}
+.fresh .hd li a:hover{
+    padding: 7px 4px;
+    background-color: #27ba9b;
+}
+
+.fresh .hd h4 a{
+    height: 96px;
+}
+.fresh .hd h4 a span{
+    top: 42px;
+}
+.fresh .bd .left{
+    float: left;
+}
+.fresh .bd .left img{
+    width: 240px;
+    height: 617px;
+}
+.fresh .bd .right{
+    float: left;
+    width: 1000px;
+}
+.fresh .bd .right li{
+    position: relative;
+    float: left;
+    width: 242px;
+    height: 304px;
+    margin-right: 8px;
+    text-align: center;
+}
+.fresh .bd .right li img{
+    width: 166px;
+    height: 166px;
+}
+.fresh .bd .right li:nth-child(4n){
+    margin-right: 0;
+}
+.fresh .bd .right li:nth-child(1),
+.fresh .bd .right li:nth-child(5) {
+    margin-left: 8px;
+}
+.fresh .bd .right li h2{
+    display: block;
+    height: 16px;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+.fresh .bd .right li span{
+    display: block;
+    font-size: 16px;
+    color: #9a2e1f;
+    margin-top: 15px;
+}
+.fresh .bd .right li:hover{
+    border: 1px solid #27ba9b;
+}
+.fresh .bd .right li .div h3{
+    margin-top: 19px;
+    display: inline-block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #a9dbcc;
+}
+.fresh .bd .right li .div{
+    width: 242px;
+    display: none;
+    background-color: #27ba9b;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.fresh .bd .right li .div h4{
+    color: #fff;
+    font-size: 12px;
+}
+.fresh .bd .right li a:hover .div{
+    display: block;
+}
+.fresh .bd .right li div{
+    display: inline-block;
+    width: 166px;
+    height: 87px;
+    text-align: center;
+}
+
+.fresh .bd .right li h2,
+.fresh .bd .right li span{
+    text-align: left;
+}
+.special{
+    margin-top: 53px;
+    height: 512px;
+    background-color: #f5f5f5;
+}
+.special .hd{
+    position: relative;
+
+}
+.special .hd h2{
+    float: left;
+    display: block;
+    height: 115px;
+    line-height: 115px;
+}
+.special .hd h4 a{
+    margin-top:  44px;
+}
+.special .hd h4 a span{
+    top: 50px;
+}
+
+.special .bd li{
+    position: relative;
+    float: left;
+    margin-right: 13px;
+    width: 404px;
+    height: 356px;
+    background-color: #ffffff;
+}
+.special .bd li div{
+    position: absolute;
+    width: 404px;
+    height: 70px;
+    top: 210px;
+    left: 15px;
+}
+.special .bd li div h2{
+    font-size: 20px;
+    color: #ffffff;
+}
+.special .bd li div h3{
+    font-size: 16px;
+    color: #999999;
+}
+.special .bd li div span{
+    text-align: center;
+    line-height: 27px;
+    color: #9a2e1f;
+    width: 81px;
+    height: 27px;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-weight: 700;
+}
+.special .bd li img{
+    display: block;
+    width: 404px;
+    height: 288px;
+}
+.special .bd li:nth-child(3){
+    margin-right: 0;
+}
+.special .bd li b{
+    display: block;
+    width: 404px;
+    height: 67px;
+    line-height: 67px;
+}
+.special .bd li b .span1{
+    background-image: url("../images/sprites.png");
+    background-position: -120px -110px;
+
+    margin-left: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+}
+.special .bd li b h3{
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+}
+.special .bd li b .span2{
+    background-image: url("../images/sprites.png");
+    background-position: -159px -110px;
+
+    margin-left: 24px;
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+}
+.special .bd li b .span3{
+    background-image: url("../images/sprites.png");
+    background-position: -200px -110px;
+
+    vertical-align: middle;
+    margin-left: 205px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}

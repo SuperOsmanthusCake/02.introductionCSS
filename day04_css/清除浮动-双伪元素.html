@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双伪元素</title>
+    <style>
+        .top{
+            margin: 0 auto;
+            width: 800px;
+            /*height: 300px;*/
+            background-color: pink;
+        }
+        .end{
+            width: auto;
+            height: 100px;
+            background-color: green;
+        }
+        .left{
+            height: 300px;
+            width: 300px;
+            background-color: #551a8b;
+            float: left;
+        }
+        .right{
+            height: 300px;
+            width: 490px;
+            background-color: #ffa500;
+            float: right;
+        }
+
+        /*伪标签是通过css添加一个假的标签*/
+        /*.clearfix::before的作用：可以解决塌陷问题
+            外边距塌陷条件：父子级标签，都是块级标签，子级加了Margin会影响父级标签
+        */
+        .clearfix:before,
+        .clearfix:after{
+            content: "";
+            display: table;
+        }
+        /*真正的清楚浮动*/
+        .clearfix:after{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="top clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+<div class="end"></div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+.shortcut{
+    height: 52px;
+    background-color: #333333;
+}
+.shortcut .wrapper ul {
+    float: right;
+}
+.shortcut .wrapper ul li{
+    line-height: 52px;
+    float: right;
+}
+.shortcut .wrapper ul li a{
+    color: #dcdcdc;
+    padding: 0 16px;
+    font-size: 14px;
+    border-right: 1px solid #666666;
+}
+.shortcut .wrapper ul li:nth-child(1) a{
+    border-right: none;
+}
+.shortcut .wrapper ul li a span{
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url("../images/sprites.png");
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+.header {
+    margin: 30px auto;
+    height: 70px;
+}
+.header .logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+/* logo 搜索引擎优化做法 */
+.logo h1 {
+    width: 207px;
+    height: 70px;
+}
+.header h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    /* 目的: 让h1里面的字看不见 */
+    font-size: 0;
+}
+.nav ul li{
+    float: left;
+    line-height: 70px;
+}
+.nav ul li a{
+    padding: 7px 0;
+    font-size: 16px;
+    margin-right: 48px;
+    color: #333333;
+}
+.nav ul li:first-child a{
+    font-size: 16px;
+    margin-left: 40px;
+}
+.nav ul li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;;
+}
+.search{
+    float: left;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #f2f2f2;
+}
+.search input{
+    padding-left: 30px;
+    width: 142px;
+    height: 14px;
+}
+.search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+.search span {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+.car{
+    position: relative;
+    margin-top: 24px;
+    float: left;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url("../images/sprites.png");
+    background-position: -120px -69px;
+
+}
+.car span {
+    /* 绝对定位, 盒子具备行内块特点 */
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}

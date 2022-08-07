@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style>
+        .top{
+            overflow: hidden;
+            margin: 0 auto;
+            width: 800px;
+            /*height: 300px;*/
+            background-color: pink;
+        }
+        .end{
+            width: auto;
+            height: 100px;
+            background-color: green;
+        }
+        .left{
+            height: 300px;
+            width: 300px;
+            background-color: #551a8b;
+            float: left;
+        }
+        .right{
+            height: 300px;
+            width: 490px;
+            background-color: #ffa500;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="top clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+<div class="end"></div>
+</body>
+</html>
